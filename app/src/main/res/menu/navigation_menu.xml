@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/configConta"
+        android:icon="@drawable/ic_portrait_black_24dp"
+        android:title="Minha Conta" />
+    <item
+        android:id="@+id/configIgrejas"
+        android:icon="@drawable/ic_brightness_high_black_24dp"
+        android:title="Igrejas" />
+
+    <item
+        android:id="@+id/configCalendario"
+        android:icon="@drawable/ic_brightness_high_black_24dp"
+        android:title="Alterar Calendario" />
+
+    <item
+        android:id="@+id/configEvento"
+        android:icon="@drawable/ic_brightness_high_black_24dp"
+        android:title="Eventos" />
+
+    <item
+        android:id="@+id/configEntidade"
+        android:icon="@drawable/ic_brightness_high_black_24dp"
+        android:title="Entidades" />
+
+    <item
+        android:id="@+id/listanomes"
+        android:icon="@drawable/ic_portrait_black_24dp"
+        android:title="Lista nomes" />
+
+</menu>

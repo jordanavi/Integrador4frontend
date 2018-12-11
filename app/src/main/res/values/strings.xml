@@ -5,4 +5,39 @@
     <string name="app_logo">Você sempre ligado ao acontece na igreja!</string>
     <string name="fechar">Fechar</string>
     <string name="abrir">Abrir</string>
+    <string name="title_activity_entidade">EntidadeActivity</string>
+
+
+    <string name="entidade">Oque é a Organização?</string>
+    <string name="descri_entidade">Cadastre uma grupo da sua igreja, tais como um grupo de jovens, banda, coral, saf e etc. </string>
+    <string name="nome_entidade"> Nome</string>
+    <string name="nm_entidade">Nome do Responsável</string>
+    <string name="responsavel_entidade">Buscar Responsável</string>
+    <string name="cadastro">Cadastrar</string>
+    <string name="evento">Evento</string>
+    <string name="nm_evento">Nome do Evento</string>
+    <string name="dtIni_evento">Data inicio</string>
+    <string name="dtFim_evento">Data Fim</string>
+    <string name="hrIni_evento">Hora inicio</string>
+    <string name="hrFim_evento">Hora Fim</string>
+    <string name="publico_evento">Público do evento</string>
+    <string name="public_evento">Público</string>
+    <string name="descricao_evento">Descricao do evento</string>
+    <string name="descri_evento">Cadastre um eveto de sua igreja.</string>
+    <string name="local_evento">Local do evento</string>
+    <string name="responsavel_evento">Responsavel do evento</string>
+    <string name="telefone_evento">Telefone do evento</string>
+    <string name="endereco_evento">Endereço do evento</string>
+    <string name="entidade_evento">Grupo do evento</string>
+    <string name="local">Local do evento</string>
+    <string name="descri_local">Informe um nome para o local do evento</string>
+    <string name="nome_local">Nome</string>
+    <string name="nm_local">Nome do local</string>
+    <string name="responsavel">Responsavel</string>
+    <string name="descri_responsavel">Cadastre um responsável para administrar os eventos de sua igreja</string>
+    <string name="nm_responsavel">Nome do responsavel</string>
+    <string name="usuario_responsavel">Usuario</string>
+    <string name="senha_responsavel">Senha</string>
+    <string name="cpf_responsavel">Cpf</string>
+    <string name="email_responsavel">Email</string>
 </resources>

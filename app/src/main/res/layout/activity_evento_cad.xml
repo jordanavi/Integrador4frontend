@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/name_label7"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/publico_evento"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+        <TextView
+            android:id="@+id/name_label4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/hrIni_evento"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+        <TextView
+            android:id="@+id/name_label5"
+            android:layout_width="102dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="64dp"
+            android:text="@string/hrFim_evento"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:ems="10"
+            android:inputType="date"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="254dp" />
+
+        <TextView
+            android:id="@+id/name_label3"
+            android:layout_width="123dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/dtFim_evento"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/editText2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_text"
+            app:layout_constraintVertical_bias="0.533" />
+
+        <TextView
+            android:id="@+id/name_label2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/nome_entidade"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toStartOf="@+id/name_text"
+            app:layout_constraintHorizontal_bias="0.964"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descicaoEntidade" />
+
+        <TextView
+            android:id="@+id/name_label6"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginStart="76dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/descricao_evento"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.095"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="570dp" />
+
+        <TextView
+            android:id="@+id/name_label8"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:text="@string/local_evento"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="107dp"
+            tools:layout_editor_absoluteY="685dp" />
+
+        <TextView
+            android:id="@+id/name_label9"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:text="@string/responsavel_evento"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="60dp"
+            tools:layout_editor_absoluteY="818dp" />
+
+        <TextView
+            android:id="@+id/name_label10"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:text="@string/telefone_evento"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="77dp"
+            tools:layout_editor_absoluteY="945dp" />
+
+        <TextView
+            android:id="@+id/name_label11"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:text="@string/endereco_evento"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="77dp"
+            tools:layout_editor_absoluteY="1065dp" />
+
+        <TextView
+            android:id="@+id/name_label12"
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:text="@string/entidade_evento"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="90dp"
+            tools:layout_editor_absoluteY="1186dp" />
+
+        <TextView
+            android:id="@+id/order_textview"
+            android:layout_width="323dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/evento"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.244"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/descicaoEntidade"
+            android:layout_width="295dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/descri_evento"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/order_textview" />
+
+
+        <TextView
+            android:id="@+id/name_label"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/dtIni_evento"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/editText"
+            app:layout_constraintTop_toBottomOf="@+id/name_label2"
+            tools:layout_editor_absoluteX="51dp" />
+
+        <EditText
+            android:id="@+id/name_text"
+            android:layout_width="191dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="28dp"
+            android:ems="10"
+            android:hint="@string/nm_evento"
+            android:inputType="textPersonName"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descicaoEntidade" />
+
+
+        <EditText
+            android:id="@+id/name_text3"
+            android:layout_width="191dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="@string/public_evento"
+            android:inputType="textPersonName"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/name_label7"
+            app:layout_constraintTop_toBottomOf="@+id/editText4" />
+
+        <EditText
+            android:id="@+id/name_text2"
+            android:layout_width="293dp"
+            android:layout_height="64dp"
+            android:ems="10"
+            android:hint="@string/descri_evento"
+            android:inputType="textPersonName"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="597dp" />
+
+        <Spinner
+            android:id="@+id/label_spinner"
+            android:layout_width="158dp"
+            android:layout_height="50dp"
+            tools:layout_editor_absoluteX="118dp"
+            tools:layout_editor_absoluteY="733dp" />
+
+        <Spinner
+            android:id="@+id/label_spinner2"
+            android:layout_width="158dp"
+            android:layout_height="50dp"
+            tools:layout_editor_absoluteX="107dp"
+            tools:layout_editor_absoluteY="858dp" />
+
+        <Spinner
+            android:id="@+id/label_spinner3"
+            android:layout_width="158dp"
+            android:layout_height="50dp"
+            tools:layout_editor_absoluteX="107dp"
+            tools:layout_editor_absoluteY="983dp" />
+
+        <Spinner
+            android:id="@+id/label_spinner4"
+            android:layout_width="158dp"
+            android:layout_height="50dp"
+            tools:layout_editor_absoluteX="107dp"
+            tools:layout_editor_absoluteY="1101dp" />
+
+        <Spinner
+            android:id="@+id/label_spinner5"
+            android:layout_width="158dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="104dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="36dp"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:text="@string/cadastro"
+            tools:layout_editor_absoluteX="132dp"
+            tools:layout_editor_absoluteY="1313dp" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:inputType="date"
+            app:layout_constraintEnd_toStartOf="@+id/editText2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="254dp" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="128dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="time"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_label4" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="44dp"
+            android:ems="10"
+            android:inputType="time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/editText3"
+            app:layout_constraintTop_toBottomOf="@+id/name_label5" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

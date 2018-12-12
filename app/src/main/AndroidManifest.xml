@@ -33,7 +33,8 @@
         <activity
             android:name=".EntidadesActivity"
             android:label="@string/title_activity_entidades"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".CadIgrejaActivity"></activity>
     </application>
 
 </manifest>

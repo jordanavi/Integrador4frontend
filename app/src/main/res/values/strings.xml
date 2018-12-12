@@ -43,4 +43,10 @@
     <string name="title_activity_eventos">Eventos</string>
     <string name="title_activity_igrejas">Igrejas</string>
     <string name="title_activity_entidades">Entidades</string>
+    <string name="igreja">Igreja</string>
+    <string name="nome">Nome:</string>
+    <string name="nome_da_igreja">Nome da igreja</string>
+    <string name="cnpj">CNPJ: </string>
+    <string name="telefone">Telefone</string>
+    <string name="endereco">Endereço</string>
 </resources>

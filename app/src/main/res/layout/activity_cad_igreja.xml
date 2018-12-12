@@ -25,19 +25,20 @@
         android:id="@+id/cidade_"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Cidade"
+        android:layout_marginBottom="8dp"
+        android:text="Cidade:"
         android:textSize="15sp"
-        app:layout_constraintStart_toEndOf="@+id/spinner2"
-        app:layout_constraintTop_toBottomOf="@+id/cep" />
+        app:layout_constraintBottom_toBottomOf="@+id/estado_"
+        app:layout_constraintTop_toBottomOf="@+id/cep"
+        tools:layout_editor_absoluteX="106dp" />
 
     <TextView
-        android:id="@+id/estado"
+        android:id="@+id/estado_"
         android:layout_width="30dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
         android:text="UF"
         android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,17 +46,16 @@
 
     <EditText
         android:id="@+id/cep"
-        android:layout_width="269dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
         android:textSize="15sp"
         app:layout_constraintTop_toBottomOf="@+id/complemento"
-        tools:layout_editor_absoluteX="103dp" />
+        tools:layout_editor_absoluteX="106dp" />
 
     <EditText
-        android:id="@+id/rua6"
+        android:id="@+id/numero"
         android:layout_width="69dp"
         android:layout_height="37dp"
         android:layout_marginStart="16dp"
@@ -70,51 +70,53 @@
         android:id="@+id/num_"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:text="Número:"
         android:textSize="15sp"
-        app:layout_constraintTop_toBottomOf="@+id/rua"
-        tools:layout_editor_absoluteX="22dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rua" />
 
     <TextView
         android:id="@+id/cep_"
         android:layout_width="wrap_content"
         android:layout_height="19dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:text="CEP:"
+        android:text="@string/cep"
         android:textSize="15sp"
         app:layout_constraintEnd_toStartOf="@+id/cep"
-        app:layout_constraintTop_toBottomOf="@+id/complemento" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cep" />
 
     <TextView
         android:id="@+id/complemento_"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:text="Complemento:"
+        android:layout_marginBottom="8dp"
+        android:text="@string/complemento"
         android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/cep"
         app:layout_constraintEnd_toStartOf="@+id/complemento"
-        app:layout_constraintHorizontal_bias="0.619"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/complemento" />
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/complemento"
         android:layout_width="269dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="12dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bairro" />
+        app:layout_constraintTop_toBottomOf="@+id/bairro_" />
 
     <EditText
-        android:id="@+id/bairro"
+        android:id="@+id/bairro_"
         android:layout_width="169dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="12dp"
@@ -129,7 +131,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Bairro:"
+        android:text="@string/bairro"
         android:textSize="15sp"
         app:layout_constraintTop_toBottomOf="@+id/rua"
         tools:layout_editor_absoluteX="172dp" />
@@ -151,7 +153,7 @@
         android:layout_width="wrap_content"
         android:layout_height="43dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
 
         android:layout_marginEnd="8dp"
         android:text="@string/igreja"
@@ -160,94 +162,40 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/name_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/nome"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/order_textview" />
-
     <EditText
         android:id="@+id/name_text"
-        android:layout_width="0dp"
+        android:layout_width="361dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
         android:ems="10"
         android:hint="@string/nome_da_igreja"
         android:inputType="textPersonName"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name_label" />
-
-    <TextView
-        android:id="@+id/label_cnpj"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/cnpj"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name_text" />
+        app:layout_constraintTop_toBottomOf="@+id/order_textview" />
 
     <EditText
         android:id="@+id/cnpj"
-        android:layout_width="333dp"
-        android:layout_height="41dp"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="4dp"
         android:ems="10"
         android:hint="@string/cnpj"
         android:inputType="textPersonName"
         android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/label_cnpj" />
-
-    <TextView
-        android:id="@+id/label_tefefone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/telefone"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cnpj" />
-
-    <EditText
-        android:id="@+id/telefone"
-        android:layout_width="215dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:ems="10"
-        android:hint="@string/telefone"
-        android:inputType="textPersonName"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/label_tefefone" />
+        app:layout_constraintTop_toBottomOf="@+id/name_text" />
 
     <TextView
         android:id="@+id/label_endereco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:text="@string/endereco"
         android:textSize="20sp"
@@ -260,19 +208,61 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:text="Logradouro:"
+        android:text="@string/logradouro"
         android:textSize="15sp"
         app:layout_constraintEnd_toStartOf="@+id/rua"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="324dp" />
+        app:layout_constraintTop_toBottomOf="@+id/label_endereco" />
 
     <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="69dp"
-        android:layout_height="37dp"
+        android:id="@+id/estado"
+        android:layout_width="51dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/cep"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/estado_"
+        app:layout_constraintTop_toBottomOf="@+id/cep" />
+
+    <EditText
+        android:id="@+id/telefone"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        app:layout_constraintStart_toEndOf="@+id/estado"
-        tools:layout_editor_absoluteY="473dp" />
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/hint_telefone"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toEndOf="@+id/cnpj"
+        app:layout_constraintTop_toBottomOf="@+id/name_text" />
+
+    <Button
+        android:id="@+id/cadastrarIgreja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="64dp"
+        android:onClick="cadastrarIgreja"
+        android:text="Cadastrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cidade" />
+
+    <Button
+        android:id="@+id/voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="24dp"
+        android:onClick="voltarInicio"
+        android:text="voltar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cidade" />
 
 </android.support.constraint.ConstraintLayout>

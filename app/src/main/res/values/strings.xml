@@ -49,4 +49,9 @@
     <string name="cnpj">CNPJ: </string>
     <string name="telefone">Telefone</string>
     <string name="endereco">Endereço</string>
+    <string name="cep">CEP:</string>
+    <string name="complemento">Complemento:</string>
+    <string name="bairro">Bairro:</string>
+    <string name="logradouro">Logradouro:</string>
+    <string name="hint_telefone">Telefone (XX) xxxx-xxxx</string>
 </resources>

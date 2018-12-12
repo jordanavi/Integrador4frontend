@@ -2,6 +2,7 @@ package com.example.jorda.igrejasonline;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 public class CadIgrejaActivity extends AppCompatActivity {
 
@@ -9,5 +10,11 @@ public class CadIgrejaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cad_igreja);
+    }
+
+    public void cadastrarIgreja(View view) {
+    }
+
+    public void voltarInicio(View view) {
     }
 }

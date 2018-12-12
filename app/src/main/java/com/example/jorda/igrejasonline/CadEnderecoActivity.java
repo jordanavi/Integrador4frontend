@@ -13,10 +13,11 @@ public class CadEnderecoActivity extends AppCompatActivity {
     }
 
     public void voltarInicio(View view) {
+        //voltar a tela principal
         setContentView(R.layout.activity_main);
     }
 
     public void concluir(View view) {
-
+        //salvar no banco de dados e voltar para a tela inicial
     }
 }

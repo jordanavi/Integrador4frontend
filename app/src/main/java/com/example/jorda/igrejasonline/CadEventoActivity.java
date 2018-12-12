@@ -13,6 +13,7 @@ public class CadEventoActivity extends AppCompatActivity {
     }
 
     public void CadEndereco(View view) {
+        setContentView(R.layout.activity_cad_endereco);
     }
 
     public void voltarInicio(View view) {

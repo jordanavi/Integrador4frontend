@@ -46,6 +46,7 @@
         android:id="@+id/cep"
         android:layout_width="266dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
         android:inputType="textPersonName"
@@ -81,12 +82,12 @@
         android:layout_width="wrap_content"
         android:layout_height="19dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="8dp"
         android:text="@string/cep"
         android:textSize="15sp"
         app:layout_constraintEnd_toStartOf="@+id/cep"
-        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/complemento_" />
 
@@ -108,8 +109,8 @@
         android:id="@+id/complemento"
         android:layout_width="269dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="4dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:textSize="15sp"
@@ -129,7 +130,7 @@
         app:layout_constraintTop_toBottomOf="@+id/logradouro" />
 
     <TextView
-        android:id="@+id/bairro"
+        android:id="@+id/bairro_"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
@@ -197,7 +198,7 @@
         android:layout_marginTop="104dp"
         android:layout_marginEnd="36dp"
         android:onClick="concluir"
-        android:text="Cadastrar"
+        android:text="Concluir"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cidade" />
 

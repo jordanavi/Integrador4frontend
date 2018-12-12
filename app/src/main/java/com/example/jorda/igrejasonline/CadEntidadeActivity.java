@@ -17,9 +17,12 @@ public class CadEntidadeActivity extends AppCompatActivity {
     }
 
     public void voltarInicio(View view) {
+        //voltar a tela inicial
         setContentView(R.layout.activity_main);
     }
 
     public void telaCadastroEndereco(View view) {
+        //salvar os dados que ja existe e prosseguir para a tela de cadastro de endereco
+        setContentView(R.layout.activity_cad_endereco);
     }
 }

@@ -8,10 +8,10 @@
     <string name="title_activity_entidade">EntidadeActivity</string>
 
 
-    <string name="entidade">Oque é a Organização?</string>
-    <string name="descri_entidade">Cadastre uma grupo da sua igreja, tais como um grupo de jovens, banda, coral, saf e etc. </string>
-    <string name="nome_entidade"> Nome</string>
-    <string name="nm_entidade">Nome do Responsável</string>
+    <string name="entidade">Organização</string>
+    <string name="descri_entidade">Cadastre um grupo da sua igreja, tais como: grupo de jovens, banda, coral, etc. </string>
+    <string name="nome_entidade"> Nome: </string>
+    <string name="nm_entidade">Nome do Responsável: </string>
     <string name="responsavel_entidade">Buscar Responsável</string>
     <string name="cadastro">Cadastrar</string>
     <string name="evento">Evento</string>
@@ -40,4 +40,7 @@
     <string name="senha_responsavel">Senha</string>
     <string name="cpf_responsavel">Cpf</string>
     <string name="email_responsavel">Email</string>
+    <string name="title_activity_eventos">Eventos</string>
+    <string name="title_activity_igrejas">Igrejas</string>
+    <string name="title_activity_entidades">Entidades</string>
 </resources>

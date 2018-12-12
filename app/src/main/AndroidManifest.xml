@@ -21,7 +21,19 @@
             android:label="@string/title_activity_entidade"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".CadEventoActivity" />
-        <activity android:name=".CadLocalActivity"></activity>
+        <activity android:name=".CadLocalActivity" />
+        <activity
+            android:name=".EventosActivity"
+            android:label="@string/title_activity_eventos"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".IgrejasActivity"
+            android:label="@string/title_activity_igrejas"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EntidadesActivity"
+            android:label="@string/title_activity_entidades"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

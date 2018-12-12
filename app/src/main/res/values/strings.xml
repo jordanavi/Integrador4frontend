@@ -11,7 +11,6 @@
     <string name="entidade">Organização</string>
     <string name="descri_entidade">Cadastre um grupo da sua igreja, tais como: grupo de jovens, banda, coral, etc. </string>
     <string name="nome_entidade"> Nome: </string>
-    <string name="nm_entidade">Nome do Responsável: </string>
     <string name="responsavel_entidade">Buscar Responsável</string>
     <string name="cadastro">Cadastrar</string>
     <string name="evento">Evento</string>
@@ -54,4 +53,6 @@
     <string name="bairro">Bairro:</string>
     <string name="logradouro">Logradouro:</string>
     <string name="hint_telefone">Telefone (XX) xxxx-xxxx</string>
+    <string name="novoResponsavel">O responsável não está na lista? Digite o seu nome aqui.</string>
+    <string name="cidade">Cidade:</string>
 </resources>

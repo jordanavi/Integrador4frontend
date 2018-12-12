@@ -34,7 +34,8 @@
             android:name=".EntidadesActivity"
             android:label="@string/title_activity_entidades"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".CadIgrejaActivity"></activity>
+        <activity android:name=".CadIgrejaActivity" />
+        <activity android:name=".CadEnderecoActivity"></activity>
     </application>
 
 </manifest>

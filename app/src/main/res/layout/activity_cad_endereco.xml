@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CadIgrejaActivity"
-    tools:layout_editor_absoluteY="81dp">
+    tools:context=".CadEnderecoActivity">
 
     <EditText
         android:id="@+id/cidade"
@@ -25,13 +24,12 @@
         android:id="@+id/cidade_"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Cidade:"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/cidade"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="@+id/estado_"
-        app:layout_constraintTop_toBottomOf="@+id/cep"
-        tools:layout_editor_absoluteX="106dp" />
+        app:layout_constraintStart_toEndOf="@+id/estado"
+        app:layout_constraintTop_toBottomOf="@+id/cep" />
 
     <TextView
         android:id="@+id/estado_"
@@ -82,13 +80,14 @@
         android:layout_width="wrap_content"
         android:layout_height="19dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="8dp"
         android:text="@string/cep"
         android:textSize="15sp"
         app:layout_constraintEnd_toStartOf="@+id/cep"
+        app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/cep" />
+        app:layout_constraintTop_toBottomOf="@+id/complemento_" />
 
     <TextView
         android:id="@+id/complemento_"
@@ -130,23 +129,23 @@
         android:id="@+id/bairro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
         android:text="@string/bairro"
         android:textSize="15sp"
-        app:layout_constraintTop_toBottomOf="@+id/rua"
-        tools:layout_editor_absoluteX="172dp" />
+        app:layout_constraintStart_toEndOf="@+id/numero"
+        app:layout_constraintTop_toBottomOf="@+id/rua" />
 
     <EditText
         android:id="@+id/rua"
         android:layout_width="277dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="12dp"
+        android:layout_marginTop="84dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/label_endereco" />
+        app:layout_constraintTop_toBottomOf="@+id/order_textview" />
 
     <TextView
         android:id="@+id/order_textview"
@@ -155,66 +154,24 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:text="@string/igreja"
+        android:text="@string/endereco"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/nome_responsavel"
-        android:layout_width="361dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="8dp"
-        android:ems="10"
-        android:hint="@string/nome_da_igreja"
-        android:inputType="textPersonName"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/order_textview" />
-
-    <EditText
-        android:id="@+id/cnpj"
-        android:layout_width="178dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
-        android:ems="10"
-        android:hint="@string/cnpj"
-        android:inputType="textPersonName"
-        android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nome_responsavel" />
-
-    <TextView
-        android:id="@+id/label_endereco"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/endereco"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/telefone" />
 
     <TextView
         android:id="@+id/logradouro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:text="@string/logradouro"
         android:textSize="15sp"
         app:layout_constraintEnd_toStartOf="@+id/rua"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/label_endereco" />
+        app:layout_constraintTop_toTopOf="@+id/rua" />
 
     <Spinner
         android:id="@+id/estado"
@@ -228,27 +185,13 @@
         app:layout_constraintStart_toEndOf="@+id/estado_"
         app:layout_constraintTop_toBottomOf="@+id/cep" />
 
-    <EditText
-        android:id="@+id/telefone"
-        android:layout_width="178dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:ems="10"
-        android:hint="@string/hint_telefone"
-        android:inputType="phone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
-        app:layout_constraintStart_toEndOf="@+id/cnpj"
-        app:layout_constraintTop_toBottomOf="@+id/nome_responsavel" />
-
     <Button
         android:id="@+id/cadastrarIgreja"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="64dp"
-        android:onClick="cadastrarIgreja"
+        android:onClick="concluir"
         android:text="Cadastrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cidade" />

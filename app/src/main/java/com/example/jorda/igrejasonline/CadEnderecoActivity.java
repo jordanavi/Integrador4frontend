@@ -13,8 +13,10 @@ public class CadEnderecoActivity extends AppCompatActivity {
     }
 
     public void voltarInicio(View view) {
+        setContentView(R.layout.activity_main);
     }
 
     public void concluir(View view) {
+
     }
 }

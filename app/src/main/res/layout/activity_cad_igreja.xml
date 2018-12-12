@@ -64,7 +64,7 @@
         android:inputType="textPersonName"
         android:textSize="15sp"
         app:layout_constraintStart_toEndOf="@+id/num_"
-        app:layout_constraintTop_toBottomOf="@+id/rua" />
+        app:layout_constraintTop_toBottomOf="@+id/logradouro" />
 
     <TextView
         android:id="@+id/num_"
@@ -75,7 +75,7 @@
         android:text="Número:"
         android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rua" />
+        app:layout_constraintTop_toBottomOf="@+id/logradouro" />
 
     <TextView
         android:id="@+id/cep_"
@@ -124,20 +124,20 @@
         android:inputType="textPersonName"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rua" />
+        app:layout_constraintTop_toBottomOf="@+id/logradouro" />
 
     <TextView
-        android:id="@+id/bairro"
+        android:id="@+id/bairro_"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/bairro"
         android:textSize="15sp"
-        app:layout_constraintTop_toBottomOf="@+id/rua"
+        app:layout_constraintTop_toBottomOf="@+id/logradouro"
         tools:layout_editor_absoluteX="172dp" />
 
     <EditText
-        android:id="@+id/rua"
+        android:id="@+id/logradouro"
         android:layout_width="277dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -162,7 +162,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/nome_responsavel"
+        android:id="@+id/titulo"
         android:layout_width="361dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -187,7 +187,7 @@
         android:inputType="textPersonName"
         android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nome_responsavel" />
+        app:layout_constraintTop_toBottomOf="@+id/titulo" />
 
     <TextView
         android:id="@+id/label_endereco"
@@ -211,7 +211,7 @@
         android:layout_marginEnd="8dp"
         android:text="@string/logradouro"
         android:textSize="15sp"
-        app:layout_constraintEnd_toStartOf="@+id/rua"
+        app:layout_constraintEnd_toStartOf="@+id/logradouro"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/label_endereco" />
@@ -240,7 +240,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toEndOf="@+id/cnpj"
-        app:layout_constraintTop_toBottomOf="@+id/nome_responsavel" />
+        app:layout_constraintTop_toBottomOf="@+id/titulo" />
 
     <Button
         android:id="@+id/cadastrarIgreja"

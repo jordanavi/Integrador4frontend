@@ -71,14 +71,14 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <EditText
-        android:id="@+id/nome_responsavel"
+        android:id="@+id/titulo"
         android:layout_width="191dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
-        android:hint="@string/nm_entidade"
+        android:hint="@string/nm_responsavel"
         android:inputType="textPersonName"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -119,10 +119,11 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="52dp"
         android:layout_marginBottom="28dp"
+        android:onClick="telaCadastroEndereco"
         android:text="PRÓXIMO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nome_responsavel"
+        app:layout_constraintTop_toBottomOf="@+id/titulo"
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
@@ -136,6 +137,6 @@
         android:text="voltar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nome_responsavel"
+        app:layout_constraintTop_toBottomOf="@+id/titulo"
         app:layout_constraintVertical_bias="1.0" />
 </android.support.constraint.ConstraintLayout>

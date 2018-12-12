@@ -15,9 +15,9 @@
     <string name="cadastro">Cadastrar</string>
     <string name="evento">Evento</string>
     <string name="nm_evento">Nome do Evento</string>
-    <string name="dtIni_evento">Data inicio</string>
+    <string name="dtIni_evento">Data início</string>
     <string name="dtFim_evento">Data Fim</string>
-    <string name="hrIni_evento">Hora inicio</string>
+    <string name="hrIni_evento">Hora início</string>
     <string name="hrFim_evento">Hora Fim</string>
     <string name="publico_evento">Público do evento</string>
     <string name="public_evento">Público</string>
@@ -55,4 +55,10 @@
     <string name="hint_telefone">Telefone (XX) xxxx-xxxx</string>
     <string name="novoResponsavel">O responsável não está na lista? Digite o seu nome aqui.</string>
     <string name="cidade">Cidade:</string>
+    <string name="proximo">Próximo</string>
+    <string name="voltar">Voltar</string>
+    <string name="nao">Não</string>
+    <string name="semanalmente">Semanalmente</string>
+    <string name="mensalmente">Mensalmente</string>
+    <string name="anualmente">Anualmente</string>
 </resources>

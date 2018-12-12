@@ -17,5 +17,9 @@ public class CadEntidadeActivity extends AppCompatActivity {
     }
 
     public void voltarInicio(View view) {
+        setContentView(R.layout.activity_main);
+    }
+
+    public void telaCadastroEndereco(View view) {
     }
 }

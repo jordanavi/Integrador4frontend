@@ -29,4 +29,3 @@ import retrofit2.converter.gson.GsonConverterFactory;
             return instancia.api;
         }
     }
-}

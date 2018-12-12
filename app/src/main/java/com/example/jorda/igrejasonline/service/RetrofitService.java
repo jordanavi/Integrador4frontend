@@ -7,7 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
     public class RetrofitService {
 
-        private String baseUrl = "url/";
+        private String baseUrl = "http://url/";
         private ModeloApi api;
         private static RetrofitService instancia;
 

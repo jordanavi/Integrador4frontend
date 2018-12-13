@@ -118,7 +118,7 @@
         app:layout_constraintTop_toBottomOf="@+id/bairro_" />
 
     <EditText
-        android:id="@+id/bairro_"
+        android:id="@+id/bairro"
         android:layout_width="169dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"

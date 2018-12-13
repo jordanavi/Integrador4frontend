@@ -7,7 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitService {
 
-    private String baseUrl = "url/";
+    private String baseUrl = "http://192.168.42.132:8080/";
     private ModeloApi api;
     private static RetrofitService instancia;
 

@@ -2,6 +2,10 @@ package com.example.jorda.igrejasonline.service;
 
 import com.example.jorda.igrejasonline.domain.ModeloEvento;
 import com.example.jorda.igrejasonline.domain.ModeloIgreja;
+import com.example.jorda.igrejasonline.model.ModeloCidade;
+import com.example.jorda.igrejasonline.model.ModeloEstado;
+
+import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -14,4 +18,10 @@ public interface ModeloApi {
 
     @GET("/eventos/{id}")
     Call<ModeloEvento> consulta(@Path("id") Integer id);
+
+    @GET("/estados")
+    Call<List<ModeloEstado>> consulta();
+
+    @GET("/cidades")
+    Call<List<ModeloCidade>> consultaCidade(@Path("id") Integer id_estado);
 }

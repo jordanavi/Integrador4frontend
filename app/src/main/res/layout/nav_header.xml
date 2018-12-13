@@ -2,29 +2,28 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/colorPrimaryDark"
+    android:background="#000099"
     android:gravity="center"
     android:orientation="vertical">
 
     <ImageView
-        android:layout_width="80dp"
-        android:layout_height="59dp"
+        android:layout_width="97dp"
+        android:layout_height="97dp"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="15dp"
-        android:background="@android:drawable/sym_def_app_icon" />
+        android:background="@drawable/igrejalogobranco" />
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:text="@string/app_name"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:text="@string/igrejamail"
         android:textColor="@android:color/background_light"
         android:textSize="18sp"
         android:textStyle="bold" />
 
-    <TextView
+    <!--TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -32,6 +31,6 @@
         android:text="@string/app_texto"
         android:textColor="@android:color/background_light"
         android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textStyle="bold" /-->
 
 </LinearLayout>

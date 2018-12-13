@@ -105,7 +105,8 @@
             app:layout_constraintTop_toBottomOf="@+id/imcalendario"
             app:layout_constraintVertical_bias="0.0" />
 
-        <android.support.design.widget.FloatingActionButton
+        <!-- Abaixo segue o codigo de um botão flutuante (com lupa) -->
+        <!--android.support.design.widget.FloatingActionButton
             android:id="@+id/fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -115,7 +116,7 @@
             android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:srcCompat="@android:drawable/ic_menu_search" />
+            app:srcCompat="@android:drawable/ic_menu_search" /-->
 
     </android.support.constraint.ConstraintLayout>
 

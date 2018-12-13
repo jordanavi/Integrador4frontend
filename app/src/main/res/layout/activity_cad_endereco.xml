@@ -6,152 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".CadEnderecoActivity">
 
-    <EditText
-        android:id="@+id/cidade"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/cidade_"
-        app:layout_constraintTop_toBottomOf="@+id/cep" />
-
-    <TextView
-        android:id="@+id/cidade_"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
-        android:text="@string/cidade"
-        android:textSize="15sp"
-        app:layout_constraintStart_toEndOf="@+id/estado"
-        app:layout_constraintTop_toBottomOf="@+id/cep" />
-
-    <TextView
-        android:id="@+id/estado_"
-        android:layout_width="30dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="12dp"
-        android:text="UF"
-        android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cep" />
-
-    <EditText
-        android:id="@+id/cep"
-        android:layout_width="266dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/complemento" />
-
-    <EditText
-        android:id="@+id/numero"
-        android:layout_width="69dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:textSize="15sp"
-        app:layout_constraintStart_toEndOf="@+id/num_"
-        app:layout_constraintTop_toTopOf="@+id/bairro_" />
-
-    <TextView
-        android:id="@+id/num_"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Número:"
-        android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/bairro_" />
-
-    <TextView
-        android:id="@+id/cep_"
-        android:layout_width="wrap_content"
-        android:layout_height="19dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/cep"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toStartOf="@+id/cep"
-        app:layout_constraintHorizontal_bias="0.428"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/complemento_" />
-
-    <TextView
-        android:id="@+id/complemento_"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/complemento"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toStartOf="@+id/complemento"
-        app:layout_constraintHorizontal_bias="0.555"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/complemento" />
-
-    <EditText
-        android:id="@+id/complemento"
-        android:layout_width="269dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="4dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bairro_" />
-
-    <EditText
-        android:id="@+id/bairro"
-        android:layout_width="169dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logradouro" />
-
-    <TextView
-        android:id="@+id/bairro_"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/bairro"
-        android:textSize="15sp"
-        app:layout_constraintStart_toEndOf="@+id/numero"
-        app:layout_constraintTop_toBottomOf="@+id/logradouro" />
-
-    <EditText
-        android:id="@+id/logradouro"
-        android:layout_width="277dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="8dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/order_textview" />
-
     <TextView
         android:id="@+id/order_textview"
         android:layout_width="wrap_content"
@@ -166,36 +20,133 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        style="@style/CampoTituloTexto"
+        android:id="@+id/cep_"
+        android:text="@string/cep"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_textview" />
+
+    <EditText
+        android:id="@+id/cep"
+        style="@style/CampoEntradaTexto"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cep_" />
+
+    <TextView
+        style="@style/CampoTituloTexto"
         android:id="@+id/logradouro_"
-        android:layout_width="wrap_content"
-        android:layout_height="17dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
         android:text="@string/logradouro"
-        android:textSize="15sp"
         app:layout_constraintEnd_toStartOf="@+id/logradouro"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/logradouro" />
+        app:layout_constraintTop_toBottomOf="@+id/cep" />
+
+    <EditText
+        android:id="@+id/logradouro"
+        style="@style/CampoEntradaTexto"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logradouro_" />
+
+    <EditText
+        android:id="@+id/numero"
+        style="@style/CampoEntradaTexto"
+        android:layout_width="100dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num_" />
+
+    <TextView
+        style="@style/CampoTituloTexto"
+        android:id="@+id/num_"
+        android:text="Número:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logradouro" />
+
+    <EditText
+        android:id="@+id/bairro"
+        style="@style/CampoEntradaTexto"
+        android:layout_width="250dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/numero"
+        app:layout_constraintTop_toBottomOf="@+id/bairro_" />
+
+    <TextView
+        style="@style/CampoTituloTexto"
+        android:id="@+id/bairro_"
+        android:text="@string/bairro"
+        app:layout_constraintStart_toEndOf="@+id/num_"
+        app:layout_constraintTop_toBottomOf="@+id/logradouro" />
+
+    <TextView
+        style="@style/CampoTituloTexto"
+        android:id="@+id/complemento_"
+        android:text="@string/complemento"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numero" />
+
+    <EditText
+        android:id="@+id/complemento"
+        style="@style/CampoEntradaTexto"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/complemento_" />
+
+    <TextView
+        style="@style/CampoTituloTexto"
+        android:id="@+id/estado_"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="UF"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/complemento" />
 
     <Spinner
         android:id="@+id/estado"
         android:layout_width="51dp"
         android:layout_height="33dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/cep"
-        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/estado_" />
+
+    <TextView
+        style="@style/CampoTituloTexto"
+        android:id="@+id/cidade_"
+        android:text="@string/cidade"
         app:layout_constraintStart_toEndOf="@+id/estado_"
-        app:layout_constraintTop_toBottomOf="@+id/cep" />
+        app:layout_constraintTop_toBottomOf="@+id/complemento" />
+
+    <EditText
+        android:id="@+id/cidade"
+        style="@style/CampoEntradaTexto"
+        android:layout_width="280dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/estado"
+        app:layout_constraintTop_toBottomOf="@+id/cidade_" />
 
     <Button
         android:id="@+id/cadastrarIgreja"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="104dp"
         android:layout_marginEnd="36dp"
         android:onClick="concluir"
         android:text="Concluir"
@@ -207,7 +158,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="72dp"
-        android:layout_marginTop="104dp"
         android:onClick="voltarInicio"
         android:text="voltar"
         app:layout_constraintStart_toStartOf="parent"

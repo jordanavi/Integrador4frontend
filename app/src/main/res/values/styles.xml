@@ -18,4 +18,31 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="CampoEntradaTexto">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="CampoTituloTexto">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <!--
+        android:ems="10"
+                app:layout_constraintHorizontal_bias="1.0"
+        <item name="android:textStyle">bold</item>
+        android:inputType="textPersonName"
+        android:textSize="15sp"
+    -->
+
+
 </resources>

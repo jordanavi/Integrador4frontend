@@ -15,7 +15,6 @@ public interface ModeloApi {
     @GET("/igrejas/{id}")
     Call<ModeloIgreja> consulta(@Path("titulo")  String titulo);
 
-
     @GET("/eventos/{id}")
     Call<ModeloEvento> consulta(@Path("id") Integer id);
 
@@ -24,4 +23,6 @@ public interface ModeloApi {
 
     @GET("/cidades")
     Call<List<ModeloCidade>> consultaCidade(@Path("id") Integer id_estado);
+
+
 }

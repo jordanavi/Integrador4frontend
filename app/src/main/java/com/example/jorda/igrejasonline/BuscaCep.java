@@ -136,19 +136,19 @@ public class BuscaCep extends AppCompatActivity {
                     final TextView txtLocalidade = (TextView) findViewById(R.id.cidade_);
 
 
-                    txtCep.setText("CEP "+cep);
+                    txtCep.setText(cep);
                     if(logradouro != " "){
-                        txtLogradouro.setText("LOGRA. "+logradouro);
+                        txtLogradouro.setText(logradouro);
                     }else{
                         txtLogradouro.setText("SEM LOGRADOURO");
                     }
                     if(complemento != " "){
-                        txtComplemento.setText("COMPL. "+complemento);
+                        txtComplemento.setText(complemento);
                     }else{
                         txtComplemento.setText("SEM COMPLEMENTO");
                     }
                     if(bairro != " "){
-                        txtBairro.setText("BAIRRO  "+bairro);
+                        txtBairro.setText(bairro);
                     }else{
                         txtBairro.setText("SEM BAIRRO");
                     }

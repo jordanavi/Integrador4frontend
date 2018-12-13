@@ -7,8 +7,6 @@
     android:textSize="20sp"
     android:gravity="left"
     android:padding="5dip"
-    android:background="#ffffff"
     android:dropDownSelector="#000000"
-    android:textColor="#ff0000"
   />
 

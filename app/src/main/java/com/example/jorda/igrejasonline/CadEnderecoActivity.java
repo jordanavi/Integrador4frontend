@@ -49,7 +49,7 @@ public class CadEnderecoActivity extends AppCompatActivity implements AdapterVie
                 Spinner spinner = findViewById(R.id.estado);
                 spinner.setOnItemSelectedListener(CadEnderecoActivity.this);
                 ArrayAdapter<String> adapter = new ArrayAdapter<String>(CadEnderecoActivity.this, R.layout.spinner_item, listaUf);
-                adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                /*adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);*/
 
                 spinner.setAdapter(adapter);
                 //spinner.setOnItemSelectedListener();

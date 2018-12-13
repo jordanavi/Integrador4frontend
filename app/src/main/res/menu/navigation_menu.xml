@@ -6,7 +6,7 @@
         android:icon="@drawable/ic_portrait_black_24dp"
         android:title="Minha Conta" />
     <item
-        android:id="@+id/configIgrejas"
+        android:id="@+id/configIgreja"
         android:icon="@drawable/ic_brightness_high_black_24dp"
         android:title="Igrejas" />
 
@@ -26,8 +26,8 @@
         android:title="Entidades" />
 
     <item
-        android:id="@+id/listanomes"
+        android:id="@+id/configEdereco"
         android:icon="@drawable/ic_portrait_black_24dp"
-        android:title="Lista nomes" />
+        android:title="Cadastro de Endereço" />
 
 </menu>

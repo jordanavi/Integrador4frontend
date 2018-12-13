@@ -1,0 +1,14 @@
+https://viacep.com.br/ws/29166768/json/https://viacep.com.br/ws/29166768/json/
+
+
+{
+  "cep": "29166-768",
+  "logradouro": "Rua das Perdizes",
+  "complemento": "",
+  "bairro": "Morada de Laranjeiras",
+  "localidade": "Serra",
+  "uf": "ES",
+  "unidade": "",
+  "ibge": "3205002",
+  "gia": ""
+}

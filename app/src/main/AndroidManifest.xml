@@ -2,14 +2,19 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.jorda.igrejasonline">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/igrejaiconbrancog"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/igrejaiconbrancog"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,23 +24,60 @@
         <activity
             android:name=".CadEntidadeActivity"
             android:label="@string/title_activity_entidade"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".CadEventoActivity" />
-        <activity android:name=".CadLocalActivity" />
+        <activity
+            android:name=".BuscaCep"
+            android:label="BuscaCEP"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CadEventoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CadLocalActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".EventosActivity"
             android:label="@string/title_activity_eventos"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".IgrejasActivity"
             android:label="@string/title_activity_igrejas"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".EntidadesActivity"
             android:label="@string/title_activity_entidades"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".CadIgrejaActivity" />
-        <activity android:name=".CadEnderecoActivity"></activity>
+        <activity
+            android:name=".CadIgrejaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CadEnderecoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".listaeventos"
+            android:label="@string/title_activity_listaeventos"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".listaigrejas"
+            android:label="@string/title_activity_listaigrejas"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".listacalendarios"
+            android:label="@string/title_activity_listacalendarios"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".listaentidades"
+            android:label="@string/title_activity_listaentidades"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

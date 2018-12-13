@@ -25,6 +25,11 @@
             android:label="@string/title_activity_entidade"
             android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".BuscaCep"
+            android:label="BuscaCEP"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait" />
         <activity android:name=".CadEventoActivity"
             android:screenOrientation="portrait" />
         <activity android:name=".CadLocalActivity"

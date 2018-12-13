@@ -1,16 +1,13 @@
 package com.example.jorda.igrejasonline;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -81,9 +78,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 Toast.makeText(MainActivity.this, "Entidades", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(MainActivity.this,CadEntidadeActivity.class));
                 break;
-            case R.id.listanomes:
-                Toast.makeText(MainActivity.this, "Lista nomes", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(MainActivity.this,CadIgrejaActivity.class));
+            case R.id.configEdereco:
+                Toast.makeText(MainActivity.this, "Cadastro de Endereço", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(MainActivity.this,CadEnderecoActivity.class));
                 break;
             default:
                 return true;

@@ -29,10 +29,23 @@
     <EditText
         android:id="@+id/cep"
         style="@style/CampoEntradaTexto"
+        android:layout_width="250dp"
+        android:layout_marginEnd="8dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toStartOf="@+id/btnCep"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cep_" />
+
+    <Button
+        android:id="@+id/btnCep"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:text="Buscar CEP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_textview" />
 
     <TextView
         style="@style/CampoTituloTexto"
@@ -53,6 +66,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logradouro_" />
 
+    <TextView
+        style="@style/CampoTituloTexto"
+        android:id="@+id/num_"
+        android:text="Número:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logradouro" />
+
     <EditText
         android:id="@+id/numero"
         style="@style/CampoEntradaTexto"
@@ -62,25 +82,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/num_" />
 
-    <TextView
-        style="@style/CampoTituloTexto"
-        android:id="@+id/num_"
-        android:text="Número:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logradouro" />
-
     <EditText
         android:id="@+id/bairro"
         style="@style/CampoEntradaTexto"
         android:layout_width="250dp"
+        android:layout_marginEnd="8dp"
         android:ems="10"
         android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/numero"
         app:layout_constraintTop_toBottomOf="@+id/bairro_" />
 
     <TextView
-        style="@style/CampoTituloTexto"
         android:id="@+id/bairro_"
+        style="@style/CampoTituloTexto"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="4dp"
         android:text="@string/bairro"
         app:layout_constraintStart_toEndOf="@+id/num_"
         app:layout_constraintTop_toBottomOf="@+id/logradouro" />
@@ -118,14 +135,16 @@
         android:id="@+id/estado"
         android:layout_width="51dp"
         android:layout_height="33dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/estado_" />
 
     <TextView
-        style="@style/CampoTituloTexto"
         android:id="@+id/cidade_"
+        style="@style/CampoTituloTexto"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="8dp"
         android:text="@string/cidade"
         app:layout_constraintStart_toEndOf="@+id/estado_"
         app:layout_constraintTop_toBottomOf="@+id/complemento" />
@@ -144,23 +163,28 @@
         app:layout_constraintTop_toBottomOf="@+id/cidade_" />
 
     <Button
-        android:id="@+id/cadastrarIgreja"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="36dp"
-        android:onClick="concluir"
-        android:text="Concluir"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/voltar"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="voltarInicio"
+        android:text="voltar"
+        app:layout_constraintEnd_toStartOf="@+id/cadastrarIgreja"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cidade" />
 
     <Button
-        android:id="@+id/voltar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="72dp"
-        android:onClick="voltarInicio"
-        android:text="voltar"
-        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/cadastrarIgreja"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:onClick="concluir"
+        android:text="Concluir"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cidade" />
 
 </android.support.constraint.ConstraintLayout>

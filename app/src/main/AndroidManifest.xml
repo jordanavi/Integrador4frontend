@@ -12,47 +12,72 @@
         android:roundIcon="@drawable/igrejaiconbrancog"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".MainActivity"
-            android:screenOrientation="portrait" >
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".CadEntidadeActivity"
             android:label="@string/title_activity_entidade"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".BuscaCep"
             android:label="BuscaCEP"
-            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CadEventoActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".CadEventoActivity"
-            android:screenOrientation="portrait" />
-        <activity android:name=".CadLocalActivity"
+        <activity
+            android:name=".CadLocalActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".EventosActivity"
             android:label="@string/title_activity_eventos"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".IgrejasActivity"
             android:label="@string/title_activity_igrejas"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".EntidadesActivity"
             android:label="@string/title_activity_entidades"
-            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CadIgrejaActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".CadIgrejaActivity"
+        <activity
+            android:name=".CadEnderecoActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".CadEnderecoActivity"
-            android:screenOrientation="portrait" />
+        <activity
+            android:name=".listaeventos"
+            android:label="@string/title_activity_listaeventos"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".listaigrejas"
+            android:label="@string/title_activity_listaigrejas"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".listacalendarios"
+            android:label="@string/title_activity_listacalendarios"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".listaentidades"
+            android:label="@string/title_activity_listaentidades"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

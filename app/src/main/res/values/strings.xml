@@ -74,4 +74,8 @@
     <string name="semanalmente">Semanalmente</string>
     <string name="mensalmente">Mensalmente</string>
     <string name="anualmente">Anualmente</string>
+    <string name="title_activity_listaeventos">listaeventos</string>
+    <string name="title_activity_listaigrejas">listaigrejas</string>
+    <string name="title_activity_listacalendarios">listacalendarios</string>
+    <string name="title_activity_listaentidades">listaentidades</string>
 </resources>

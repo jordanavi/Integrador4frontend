@@ -42,5 +42,8 @@ public class CadIgrejaActivity extends AppCompatActivity {
     }
 
     public void voltarInicio(View view) {
+        //setContentView(R.layout.activity_main);
+        startActivity(new Intent(this, MainActivity.class));  //O efeito ao ser pressionado do botão (no caso abre a activity)
+        finishAffinity();  //Método para matar a activity e não deixa-lá indexada na pilhagem
     }
 }

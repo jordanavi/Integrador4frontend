@@ -96,22 +96,16 @@
         app:layout_constraintTop_toBottomOf="@+id/foneIgreja_" />
 
     <Button
+        style="@style/botaoavancar"
         android:id="@+id/cadastrarIgreja"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="64dp"
         android:onClick="cadastrarIgreja"
-        android:text="Cadastrar"
+        android:text="Avançar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/telefone" />
 
     <Button
+        style="@style/botaovoltar"
         android:id="@+id/voltar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="60dp"
         android:onClick="voltarInicio"
         android:text="voltar"
         app:layout_constraintStart_toStartOf="parent"

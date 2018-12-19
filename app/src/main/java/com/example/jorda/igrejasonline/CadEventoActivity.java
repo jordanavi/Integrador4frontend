@@ -5,8 +5,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class CadEventoActivity extends AppCompatActivity {
+
+    String[] opcoessp = {"Não","Semanalmente","Quinzenalmente","Mensalmente","Bimestralmente","Semestralmente","Anualmente"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +50,8 @@ public class CadEventoActivity extends AppCompatActivity {
     }
 
     public void voltarInicio(View view) {
-        setContentView(R.layout.activity_main);
+        //setContentView(R.layout.activity_main);
+        startActivity(new Intent(this, MainActivity.class));  //O efeito ao ser pressionado do botão (no caso abre a activity)
+        finishAffinity();  //Método para matar a activity e não deixa-lá indexada na pilhagem
     }
 }

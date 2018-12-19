@@ -163,12 +163,8 @@
         app:layout_constraintTop_toBottomOf="@+id/cidade_" />
 
     <Button
+        style="@style/botaovoltar"
         android:id="@+id/voltar"
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="8dp"
         android:onClick="voltarInicio"
         android:text="voltar"
         app:layout_constraintEnd_toStartOf="@+id/cadastrarIgreja"
@@ -177,11 +173,8 @@
         app:layout_constraintTop_toBottomOf="@+id/cidade" />
 
     <Button
+        style="@style/botaoavancar"
         android:id="@+id/cadastrarIgreja"
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="20dp"
         android:onClick="concluir"
         android:text="Concluir"
         app:layout_constraintEnd_toEndOf="parent"

@@ -80,4 +80,16 @@
     <string name="title_activity_listaentidades">listaentidades</string>
     <string name="lista_de_igrejas">Lista de Igrejas</string>
     <string name="title_activity_cad_usuario">activity_cad_usuario</string>
+
+    <!-- Esta lista alimenta o spinner da activity_evento_cad
+         para selecionar se um evento se repetirá e como.       -->
+    <string-array name="repete">
+        <item>Não</item>
+        <item>Semanalmente</item>
+        <item>Quinzenalmente</item>
+        <item>Mensalmente</item>
+        <item>Bimestralmente</item>
+        <item>Semestralmente</item>
+        <item>Anualmente</item>
+    </string-array>
 </resources>

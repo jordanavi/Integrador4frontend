@@ -41,6 +41,17 @@ public class CadUsuarioActivity extends AppCompatActivity {
         return;
     }
 
+    public void voltarInicio(View view) {
+        //voltar a tela inicial
+        //setContentView(R.layout.activity_main);
+        startActivity(new Intent(this, MainActivity.class));  //O efeito ao ser pressionado do botão (no caso abre a activity)
+        finishAffinity();  //Método para matar a activity e não deixa-lá indexada na pilhagem
 
+    }
+
+    public void CadEndereco(View view) {
+        //salvar os dados que ja existe e prosseguir para a tela de cadastro de endereco
+        setContentView(R.layout.activity_cad_endereco);
+    }
 
 }

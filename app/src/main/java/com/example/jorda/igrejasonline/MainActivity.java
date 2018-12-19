@@ -65,11 +65,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         int id = menuItem.getItemId();
         switch (id) {
             case R.id.configConta:
-                Toast.makeText(MainActivity.this, "Minha conta", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(MainActivity.this,CadIgrejaActivity.class));
+                Toast.makeText(MainActivity.this, "Usuários", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(MainActivity.this,CadUsuarioActivity.class));
                 break;
             case R.id.configIgreja:
-                Toast.makeText(MainActivity.this, "Minha conta", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Igrejas", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(MainActivity.this,CadIgrejaActivity.class));
                 break;
             case R.id.configCalendario:

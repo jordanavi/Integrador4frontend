@@ -22,15 +22,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".CadEntidadeActivity"
-            android:label="@string/title_activity_entidade"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".BuscaCep"
             android:label="BuscaCEP"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CadEntidadeActivity"
+            android:label="@string/title_activity_entidade"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CadUsuarioActivity"
+            android:label="@string/title_activity_cad_usuario"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".CadEventoActivity"
             android:screenOrientation="portrait" />
@@ -40,8 +42,7 @@
         <activity
             android:name=".EventosActivity"
             android:label="@string/title_activity_eventos"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".IgrejasActivity"
             android:label="@string/title_activity_igrejas"
@@ -50,8 +51,7 @@
         <activity
             android:name=".EntidadesActivity"
             android:label="@string/title_activity_entidades"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".CadIgrejaActivity"
             android:screenOrientation="portrait" />
@@ -77,7 +77,7 @@
         <activity
             android:name=".listaentidades"
             android:label="@string/title_activity_listaentidades"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

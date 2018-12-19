@@ -2,7 +2,6 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">#000066</item>
         <item name="colorPrimaryDark">@color/design_default_color_primary_dark</item>
         <item name="colorAccent">@color/design_default_color_primary_dark</item>
@@ -30,10 +29,25 @@
     <style name="CampoTituloTexto">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginStart">10dp</item>
-        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
         <item name="android:layout_marginEnd">8dp</item>
         <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="botaovoltar">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="botaoavancar">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:textSize">14sp</item>
     </style>
 
     <!--

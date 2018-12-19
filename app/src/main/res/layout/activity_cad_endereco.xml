@@ -124,7 +124,7 @@
         android:id="@+id/estado_"
         android:layout_width="30dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="UF"
         android:textSize="15sp"
@@ -135,15 +135,15 @@
         android:id="@+id/estado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/estado_" />
 
     <TextView
         android:id="@+id/cidade_"
         style="@style/CampoTituloTexto"
-        android:layout_marginStart="56dp"
+        android:layout_marginStart="36dp"
         android:layout_marginTop="8dp"
         android:text="@string/cidade"
         app:layout_constraintStart_toEndOf="@+id/estado_"
@@ -152,9 +152,9 @@
     <EditText
         android:id="@+id/cidade"
         style="@style/CampoEntradaTexto"
-        android:layout_width="280dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="18dp"
         android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="textPersonName"
@@ -163,12 +163,8 @@
         app:layout_constraintTop_toBottomOf="@+id/cidade_" />
 
     <Button
+        style="@style/botaovoltar"
         android:id="@+id/voltar"
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="8dp"
         android:onClick="voltarInicio"
         android:text="voltar"
         app:layout_constraintEnd_toStartOf="@+id/cadastrarIgreja"
@@ -177,11 +173,8 @@
         app:layout_constraintTop_toBottomOf="@+id/cidade" />
 
     <Button
+        style="@style/botaoavancar"
         android:id="@+id/cadastrarIgreja"
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="20dp"
         android:onClick="concluir"
         android:text="Concluir"
         app:layout_constraintEnd_toEndOf="parent"

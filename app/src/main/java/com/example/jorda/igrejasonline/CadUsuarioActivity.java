@@ -1,17 +1,21 @@
 package com.example.jorda.igrejasonline;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 
-public class CadIgrejaActivity extends AppCompatActivity {
+public class CadUsuarioActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cad_igreja);
+        setContentView(R.layout.activity_cad_usuario);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); //Mostrar o botão
         getSupportActionBar().setHomeButtonEnabled(true);      //Ativar o botão
@@ -37,13 +41,17 @@ public class CadIgrejaActivity extends AppCompatActivity {
         return;
     }
 
-
-    public void cadastrarIgreja(View view) {
-    }
-
     public void voltarInicio(View view) {
+        //voltar a tela inicial
         //setContentView(R.layout.activity_main);
         startActivity(new Intent(this, MainActivity.class));  //O efeito ao ser pressionado do botão (no caso abre a activity)
         finishAffinity();  //Método para matar a activity e não deixa-lá indexada na pilhagem
+
     }
+
+    public void CadEndereco(View view) {
+        //salvar os dados que ja existe e prosseguir para a tela de cadastro de endereco
+        setContentView(R.layout.activity_cad_endereco);
+    }
+
 }

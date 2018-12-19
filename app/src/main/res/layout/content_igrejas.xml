@@ -8,4 +8,11 @@
     tools:context=".IgrejasActivity"
     tools:showIn="@layout/activity_igrejas">
 
+
+    <ListView
+        android:id="@+id/listaCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
 </android.support.constraint.ConstraintLayout>

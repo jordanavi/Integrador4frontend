@@ -1,5 +1,6 @@
 package com.example.jorda.igrejasonline;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -8,6 +9,10 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -31,21 +36,23 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         nv = (NavigationView) findViewById(R.id.nv);
         nv.setNavigationItemSelectedListener(this);
-/*
-        //CÓDIGO DO BOTÃO FLUTUANTE DA TELA PRINCIPAL (LUPA)
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+
+        final ImageView botaoIgrejas =(ImageView)findViewById(R.id.imigreja);
+
+        botaoIgrejas.setOnClickListener(new View.OnClickListener()   {
+            public void onClick(View v)  {
+                try {
+                    // abrindo um nova activity [ Tela de listar igrejas ]
+                    Intent intentIgrejas = new Intent(getApplicationContext(), IgrejasActivity.class);
+                    startActivity(intentIgrejas);
+                    //Toast.makeText(getApplicationContext(), "Clicou na igreja", Toast.LENGTH_SHORT).show();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
         });
-*/
 
     }
-
-    // Responde a eventos do hamburger
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (t.onOptionsItemSelected(item))
@@ -53,7 +60,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         return super.onOptionsItemSelected(item);
     }
 
-    // Responde a eventos do menu da gaveta de navegação
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         int id = menuItem.getItemId();

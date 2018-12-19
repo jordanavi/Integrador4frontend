@@ -9,7 +9,7 @@
     <string name="action_settings">Settings</string>
     <string name="fechar">Fechar</string>
     <string name="abrir">Abrir</string>
-    <string name="txigreja">Localizar Igrejas</string>
+    <string name="txigreja">Igrejas</string>
     <string name="txagenda">Agenda de Eventos</string>
     <string name="txcalendario">Calendário de Atividades</string>
     <string name="igrejamail">igrejasonline@outlook.com</string>
@@ -78,4 +78,5 @@
     <string name="title_activity_listaigrejas">listaigrejas</string>
     <string name="title_activity_listacalendarios">listacalendarios</string>
     <string name="title_activity_listaentidades">listaentidades</string>
+    <string name="lista_de_igrejas">Lista de Igrejas</string>
 </resources>

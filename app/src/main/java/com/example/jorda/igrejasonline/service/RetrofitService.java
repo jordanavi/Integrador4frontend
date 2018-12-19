@@ -7,7 +7,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitService {
 
-    private String baseUrl = "http://192.168.42.132:8080/";
+    //private String baseUrl = "http://192.168.42.132:8080/";
+    private String baseUrl = "https://igrejasonline.herokuapp.com";
     private ModeloApi api;
     private static RetrofitService instancia;
 
@@ -28,4 +29,5 @@ public class RetrofitService {
             instancia = new RetrofitService();
         return instancia.api;
     }
+
 }

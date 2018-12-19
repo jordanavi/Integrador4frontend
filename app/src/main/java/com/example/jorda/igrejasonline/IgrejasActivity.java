@@ -1,13 +1,30 @@
 package com.example.jorda.igrejasonline;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
+import android.util.Log;
+import android.view.MenuItem;
+import android.widget.ListView;
+
+import com.example.jorda.igrejasonline.Adapter.IgrejaAdapter;
+import com.example.jorda.igrejasonline.domain.ModeloIgreja;
+import com.example.jorda.igrejasonline.service.RetrofitService;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class IgrejasActivity extends AppCompatActivity {
+
+    ListView listView;
+    RetrofitService service;
+    List<ModeloIgreja> listaIgrejas = new ArrayList<ModeloIgreja>();
+    IgrejaAdapter igrejaAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,12 +33,48 @@ public class IgrejasActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        listView = findViewById(R.id.listaCategoria);
+
+        getIgrejas();
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true); //Mostrar o botão
+        getSupportActionBar().setHomeButtonEnabled(true);      //Ativar o botão
+        //getSupportActionBar().setTitle("Seu titulo aqui");     //Titulo para ser exibido na sua Action Bar em frente à seta
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) { //Botão adicional na ToolBar
+        switch (item.getItemId()) {
+            case android.R.id.home:  //ID do seu botão (gerado automaticamente pelo android, usando como está, deve funcionar
+                startActivity(new Intent(this, MainActivity.class));  //O efeito ao ser pressionado do botão (no caso abre a activity)
+                finishAffinity();  //Método para matar a activity e não deixa-lá indexada na pilhagem
+                break;
+            default:break;
+        }
+        return true;
+    }
+
+    @Override
+    public void onBackPressed(){ //Botão BACK padrão do android
+        startActivity(new Intent(this, MainActivity.class)); //O efeito ao ser pressionado do botão (no caso abre a activity)
+        finishAffinity(); //Método para matar a activity e não deixa-lá indexada na pilhagem
+        return;
+    }
+
+    private void getIgrejas() {
+        Call<List<ModeloIgreja>> call = service.getServico().getIgrejas();
+        call.enqueue(new Callback<List<ModeloIgreja>>() {
             @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+            public void onResponse(Call<List<ModeloIgreja>> call, Response<List<ModeloIgreja>> response) {
+                if (response.isSuccessful()) {
+                    listaIgrejas = response.body();
+                    igrejaAdapter = new IgrejaAdapter(IgrejasActivity.this, R.layout.unica_igreja, listaIgrejas);
+                    listView.setAdapter(igrejaAdapter);
+                }
+            }
+            @Override
+            public void onFailure(Call<List<ModeloIgreja>> call, Throwable t) {
+                Log.e("ERROR: ", t.getMessage());
             }
         });
     }

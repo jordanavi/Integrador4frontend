@@ -94,28 +94,6 @@
             app:layout_constraintTop_toBottomOf="@+id/descricao" />
 
         <TextView
-            android:id="@+id/name_label6"
-            android:layout_width="wrap_content"
-            android:layout_height="28dp"
-            android:layout_marginStart="76dp"
-            android:layout_marginEnd="8dp"
-            android:text="@string/descricao_evento"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.095"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="570dp" />
-
-        <TextView
-            android:id="@+id/name_label8"
-            android:layout_width="wrap_content"
-            android:layout_height="28dp"
-            android:text="@string/local_evento"
-            android:textSize="18sp"
-            tools:layout_editor_absoluteX="107dp"
-            tools:layout_editor_absoluteY="685dp" />
-
-        <TextView
             android:id="@+id/order_textview"
             android:layout_width="0dp"
             android:layout_height="43dp"
@@ -166,7 +144,7 @@
             android:ems="10"
             android:hint="@string/public_evento"
             android:inputType="textPersonName"
-            android:textSize="18sp"
+            android:textSize="17sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.529"
             app:layout_constraintStart_toStartOf="parent"
@@ -266,7 +244,7 @@
         </RadioGroup>
 
         <Spinner
-            android:id="@+id/igreja"
+            android:id="@+id/igrejasp"
             android:layout_width="106dp"
             android:layout_height="22dp"
             android:layout_marginTop="44dp"

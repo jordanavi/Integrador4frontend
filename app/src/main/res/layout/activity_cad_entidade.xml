@@ -1,17 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CadEntidadeActivity">
-
+    tools:context=".CadEntidadeActivity"
+    tools:layout_editor_absoluteY="81dp">
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="276dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:text="@string/novoResponsavel"
         android:textSize="15sp"
@@ -22,67 +23,62 @@
 
     <TextView
         android:id="@+id/order_textview"
-        android:layout_width="323dp"
+        android:layout_width="match_parent"
         android:layout_height="43dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
 
-        android:layout_marginEnd="8dp"
         android:text="@string/entidade"
         android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/descicaoEntidade"
-        android:layout_width="295dp"
-        android:layout_height="72dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="@string/descri_entidade"
         android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@+id/order_textview"
-        tools:layout_editor_absoluteX="45dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_textview" />
 
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/nome_entidade"
-        android:textSize="24sp"
-        app:layout_constraintTop_toBottomOf="@+id/descicaoEntidade"
-        tools:layout_editor_absoluteX="157dp" />
-
-    <EditText
-        android:id="@+id/nome_entidade"
+        style="@style/CampoTituloTexto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:text="@string/nome_entidade"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descicaoEntidade" />
+
+    <EditText
+        android:id="@+id/nome_entidade"
+        style="@style/CampoTituloTexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <EditText
         android:id="@+id/titulo"
-        android:layout_width="191dp"
+        style="@style/CampoTituloTexto"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
         android:ems="10"
         android:hint="@string/nm_responsavel"
         android:inputType="textPersonName"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -92,23 +88,17 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
         android:text="@string/responsavel_entidade"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nome_entidade" />
 
     <Spinner
         android:id="@+id/label_spinner_responsavel"
-        android:layout_width="161dp"
-        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="96dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.873"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/address_label" />
 
@@ -119,7 +109,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="52dp"
         android:layout_marginBottom="28dp"
-        android:onClick="telaCadastroEndereco"
+        android:onClick="CadEndereco"
         android:text="@string/proximo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -139,4 +129,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titulo"
         app:layout_constraintVertical_bias="1.0" />
+
 </android.support.constraint.ConstraintLayout>

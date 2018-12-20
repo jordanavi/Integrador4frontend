@@ -1,6 +1,5 @@
 package com.example.jorda.igrejasonline;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -10,8 +9,6 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -37,7 +34,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         nv = (NavigationView) findViewById(R.id.nv);
         nv.setNavigationItemSelectedListener(this);
 
-        final ImageView botaoIgrejas =(ImageView)findViewById(R.id.imigreja);
+        final ImageView botaoIgrejas = findViewById(R.id.imigreja);
+        final ImageView botaoEventos = findViewById(R.id.imagenda);
+        final ImageView botaoCalendario = findViewById(R.id.imcalendario);
 
         botaoIgrejas.setOnClickListener(new View.OnClickListener()   {
             public void onClick(View v)  {
@@ -45,7 +44,29 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     // abrindo um nova activity [ Tela de listar igrejas ]
                     Intent intentIgrejas = new Intent(getApplicationContext(), IgrejasActivity.class);
                     startActivity(intentIgrejas);
-                    //Toast.makeText(getApplicationContext(), "Clicou na igreja", Toast.LENGTH_SHORT).show();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        botaoEventos.setOnClickListener(new View.OnClickListener()   {
+            public void onClick(View v)  {
+                try {
+                    // abrindo um nova activity [ Tela de listar Eventos ]
+                    Intent intentEventos = new Intent(getApplicationContext(), EventosActivity.class);
+                    startActivity(intentEventos);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        botaoCalendario.setOnClickListener(new View.OnClickListener()   {
+            public void onClick(View v)  {
+                try {
+                    // abrindo um nova activity [ Tela de listar Agenda ]
+                    Toast.makeText(getApplicationContext(), "Clicou em Agendas", Toast.LENGTH_SHORT).show();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

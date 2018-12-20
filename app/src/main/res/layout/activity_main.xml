@@ -58,6 +58,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txigreja"
             app:layout_constraintVertical_bias="0.044"
+            android:onClick="onClick"
             app:srcCompat="@drawable/igagenda" />
 
         <TextView
@@ -88,6 +89,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imagenda"
             app:layout_constraintVertical_bias="0.387"
+            android:onClick="onClick"
             app:srcCompat="@drawable/igcalendario" />
 
 

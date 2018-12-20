@@ -13,9 +13,6 @@ import retrofit2.http.Path;
 
 public interface ModeloApi {
 
-    @GET("/eventos/{id}")
-    Call<ModeloEvento> consulta(@Path("id") Integer id);
-
     @GET("/estados")
     Call<List<ModeloEstado>> consulta();
 
@@ -28,6 +25,13 @@ public interface ModeloApi {
 
     @GET("/igrejas/{id}")
     Call<ModeloIgreja> consulta(@Path("titulo")  String titulo);
+
+    // End-point busca igreja
+    @GET("/eventos")
+    Call<List<ModeloEvento>> getEventos();
+
+    @GET("/eventos/{id}")
+    Call<ModeloEvento> consulta(@Path("id") Integer id);
 
 
 }

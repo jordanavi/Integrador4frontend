@@ -33,7 +33,7 @@ public class IgrejasActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        listView = findViewById(R.id.listaCategoria);
+        listView = findViewById(R.id.listaI);
 
         getIgrejas();
 

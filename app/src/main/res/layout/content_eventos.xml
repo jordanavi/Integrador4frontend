@@ -8,4 +8,10 @@
     tools:context=".EventosActivity"
     tools:showIn="@layout/activity_eventos">
 
+    <ListView
+        android:id="@+id/listaE"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
 </android.support.constraint.ConstraintLayout>
